@@ -57,7 +57,7 @@ void schedulaProcessiES2(vector<Processo> vettProcessi)
             }
         }
         sort(Coda.begin(), Coda.end(), [](const Processo a, const Processo b)
-             { return a.durata > b.durata; });
+             { return a.durata < b.durata; });
 
         if (!Coda.empty())
         {
